@@ -45,7 +45,7 @@ def draw_line(event, x, y, flags, param):
         if len(points) == 1:
             points.clear()
             
-cap = cv2.VideoCapture('videos/vtest.avi')
+cap = cv2.VideoCapture('videos/video.mp4')
 ratio = .7
 ret, frame = cap.read()
 frame_draw = copy.copy(cv2.resize(frame, (0, 0), None, ratio, ratio))
